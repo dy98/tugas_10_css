@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,28 +55,32 @@ table {
 body {
     width: 100%;
     height: 850px;
-    background-image: -webkit-linear-gradient(bottom left, red, white);
+    background-image: -webkit-gradient(linear, left bottom, right top, from(red), to(white));
+    background-image: -o-linear-gradient(bottom left, red, white);
     background-image: linear-gradient(to top right, red, white);
 }
 
 .satu {
-    width: 400px;
+    width: 600px;
     height: 350px;
     margin: auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: blue;
-    background-image: -webkit-radial-gradient(top center, blue, white);
-    background-image: radial-gradient(to bottom center, blue, white);
+    background-image: -o-radial-gradient(bottom, circle, white, blue);
+    background-image: radial-gradient(circle at bottom, white, blue);
     z-index: 1;
 }
 
 .dua {
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 150px;
     margin: auto;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: blue;
-    background-image: -webkit-radial-gradient(top center, blue, white);
-    background-image: radial-gradient(to bottom center, blue, white);
+    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(blue), to(white));
+    background-image: -o-linear-gradient(left, white, blue, white);
+    background-image: linear-gradient(to right, white, blue, white);
     z-index: 1;
 }
